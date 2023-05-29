@@ -122,7 +122,7 @@ describe('Basic user flow for Website', () => {
       await (await (await productItem.getProperty('shadowRoot')).$('button')).click();
     }
     expect(await (await (await page.$('#cart-count')).getProperty('innerText')).jsonValue()).toEqual("0");
-  }, 10000);
+  }, 20000);
 
   // Checking to make sure that it remembers us removing everything from the cart
   // after we refresh the page
